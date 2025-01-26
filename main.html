@@ -1,42 +1,40 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="en">
 
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-   
-	<form>
-	<label for="name">Name</label>
-	<input id="name" type="text" placeholder="Name"/>
-	<br/>
-	<label for="phone">Phone Number</label>
-	<input id="phone" type="text" placeholder="Phone Number"/>
-    <br/>
-	<label for="address">Addres</label>
-	<input id="address" type="text" placeholder="Address"/>
-     <br/>
-	<label for="checkbox">Have you ever lived with a Dog before?</label>
-	<input id="checkbox" type="checkbox" placeholder="Name" 
-		vale="Have you ever lived with a Dog before?"/>
-	<br/>
-			<label for="multiSelect">Please select your preferred breeds</label>
-	        <select id="multiSelect" > 
-			<option>choose from below</option>
-			<option>Dog1</option>
-				<option>Dog2</option>
-				<option>Dog3</option>
-			
-			</select>
-	        <br/>
-		   <button id="submit" type="submit" value=Submit>Submit</button>
-		
-</form>
-	 <script type="text/javascript" src="./script.js">
-</script>
+  <form>
+    <label for="name">Name</label>
+    <input id="name" type="text" placeholder="Name" required />
+    <br />
+
+    <label for="phone">Phone Number</label>
+    <input id="phone" type="text" placeholder="Phone Number" required />
+    <br />
+
+    <label for="address">Address</label>
+    <input id="address" type="text" placeholder="Address" required />
+    <br />
+
+    <label for="checkbox">Have you ever lived with a Dog before?</label>
+    <input id="checkbox" type="checkbox" value="true" />
+    <br />
+
+    <label for="multiSelect">Please select your preferred breeds</label>
+    <select id="multiSelect" multiple>
+      <option value="Dog1">Dog1</option>
+      <option value="Dog2">Dog2</option>
+      <option value="Dog3">Dog3</option>
+    </select>
+    <br />
+
+    <button id="submit" type="submit">Submit</button>
+  </form>
+
+  <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
